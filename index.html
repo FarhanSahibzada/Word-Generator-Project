@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h1 {
+                color: rgb(189, 47, 47);
+                font-family: sans-serif;
+                margin-bottom: 10px;
+            }
+
+            h2 {
+
+                color: blueviolet;
+                text-decoration: underline;
+                font-family: sans-serif;
+            }
+
+        }
+
+        .btncontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 300px;
+
+
+
+            .A {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+
+
+
+                h1 {
+                    color: rgb(84, 70, 193);
+                    font-family: sans-serif;
+
+
+                }
+            }
+
+            .show {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                font-size: 50px ;
+                display: block;
+                text-align: center;
+       background-color: #cc2366;
+            }
+
+            button {
+                display: block;
+                padding: 8px 16px;
+                width: 80px;
+                height: 80px;
+                border: none;
+                border-radius: 50%;
+                font-size: 22px;
+                color: white;
+                font-weight: 500;
+                background: linear-gradient(45deg,
+                        #f09433 0%,
+                        #e6683c 25%,
+                        #dc2743 50%,
+                        #cc2366 75%,
+                        #4862c9 100%);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>welcome Children</h1>
+         <h2>Here you See names of any letter</h2>
+    </div>
+    <h1 style="  margin-top: 40px;  font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-weight: 300;
+    left: 45.5%;
+    font-size: 50px ;
+    display:block;
+    text-align: center;" id="show"></h1>
+
+
+
+    <div class="btncontainer">
+        <button value="A">A</button>
+        <button value="B">B</button>
+        <button value="C">C</button>
+        <button value="D">D</button>
+        <button value="E">E</button>
+        <button value="F">F</button>
+        <button value="G">G</button>
+        <button value="H">H</button>
+        <button value="I">I</button>
+        <button value="J">J</button>
+        <button value="K">K</button>
+        <button value="L">L</button>
+        <button value="M">M</button>
+        <button value="N">N</button>
+        <button value="O">O</button>
+        <button value="Q">Q</button>
+        <button value="R">R</button>
+        <button value="S">S</button>
+        <button value="T">T</button>
+        <button value="U">U</button>
+        <button value="V">V</button>
+        <button value="W">W</button>
+        <button value="X">X</button>
+        <button value="Y">Y</button>
+        <button value="Z">Z</button>
+
+    </div>
+
+    <!-- <div class="btncontainer">
+        <div class="A">
+
+            <button onclick="play('A')" id="alpha">A</button>
+            <h1 id="display">=</h1>
+        </div>
+        <div class="A">
+
+            <button onclick="play('B')" id="alpha">B</button>
+            <h1 id="displayB">=</h1>
+        </div>
+        <div class="A">
+
+            <button onclick="play('C')" id="alpha">C</button>
+            <h1 id="displayC">=</h1>
+        </div>
+        <div class="A">
+
+            <button onclick="play('D')" id="alpha">D</button>
+            <h1 id="displayD">=</h1>
+        </div>
+        <div class="A">
+
+            <button onclick="play('E')" id="alpha">E</button>
+            <h1 id="displayE">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('F')" id="alpha">F</button>
+            <h1 id="displayF">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('G')" id="alpha">G</button>
+            <h1 id="displayG">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('H')" id="alpha">H</button>
+            <h1 id="displayH">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('I')" id="alpha">I</button>
+            <h1 id="displayI">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('J')" id="alpha">J</button>
+            <h1 id="displayJ">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('K')" id="alpha">K</button>
+            <h1 id="displayK">=</h1>
+        </div>
+
+        <div class="A">
+            <button onclick="play('L')" id="alpha">L</button>
+            <h1 id="displayL">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('M')" id="alpha">M</button>
+            <h1 id="displayM">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('N')" id="alpha">N</button>
+            <h1 id="displayN">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('O')" id="alpha">O</button>
+            <h1 id="displayO">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('P')" id="alpha">P</button>
+            <h1 id="displayP">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('Q')" id="alpha">Q</button>
+            <h1 id="displayQ">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('R')" id="alpha">R</button>
+            <h1 id="displayR">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('S')" id="alpha">S</button>
+            <h1 id="displayS">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('T')" id="alpha">T</button>
+            <h1 id="displayT">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('U')" id="alpha">U</button>
+            <h1 id="displayU">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('V')" id="alpha">V</button>
+            <h1 id="displayV">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('W')" id="alpha">W</button>
+            <h1 id="displayW">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('X')" id="alpha">X</button>
+            <h1 id="displayX">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('Y')" id="alpha">Y</button>
+            <h1 id="displayY">=</h1>
+        </div>
+        <div class="A">
+            <button onclick="play('Z')" id="alpha">Z</button>
+            <h1 id="displayZ">=</h1>
+        </div> -->
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
